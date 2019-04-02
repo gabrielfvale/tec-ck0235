@@ -1,11 +1,11 @@
 class Extreme extends Conta {
 
     Extreme(int id) {
-        super(id);
+        super(id, "extreme");
     }
 
     Extreme(int id, double saldo) {
-        super(id, saldo);
+        super(id, saldo, "extreme");
     }
 
     void creditar(double valor) {
@@ -16,5 +16,4 @@ class Extreme extends Conta {
         this.saldo -= valor;
     }
 
-    void toString()
 }

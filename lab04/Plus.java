@@ -1,11 +1,11 @@
 class Plus extends Conta {
 
     Plus(int id) {
-        super(id);
+        super(id, "plus");
     }
 
     Plus(int id, double saldo) {
-        super(id, saldo);
+        super(id, saldo, "plus");
     }
 
     void creditar(double valor) {
@@ -14,9 +14,5 @@ class Plus extends Conta {
 
     void debitar(double valor) {
  
-    }
-
-    String toString() {
-        
     }
 }

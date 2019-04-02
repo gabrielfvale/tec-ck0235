@@ -19,7 +19,11 @@ abstract class Conta {
 
     abstract void debitar(double valor);
 
+    double consultarSaldo() {
+        return this.saldo;
+    }
+
     String toString() {
-        System.out.println("Conta " + tipo.toUpperCase() + "\n ID: " + this.id + "\n Saldo: " + this.saldo);
+        return "Conta " + tipo.toUpperCase() + "\n ID: " + this.id + "\n Saldo: " + this.saldo);
     }
 }

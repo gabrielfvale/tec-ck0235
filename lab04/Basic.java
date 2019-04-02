@@ -1,11 +1,11 @@
 class Basic extends Conta {
 
     Basic(int id) {
-        super(id);
+        super(id, "basic");
     }
 
     Basic(int id, double saldo) {
-        super(id, saldo);
+        super(id, saldo, "basic");
     }
 
     void creditar(double valor) {
