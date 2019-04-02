@@ -7,8 +7,6 @@ class Teste {
 
         for(int i = 1; i<=3; i++) s.creditar(i, 1000);
 
-        for(int i = 1; i<=3: i++) s.debitar(1, 10);
-
-        s.consultarSaldo(1) == 990;
+        for(int i = 1; i<=3; i++) s.debitar(1, 10);
     }
 }

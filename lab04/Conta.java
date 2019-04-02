@@ -14,16 +14,24 @@ abstract class Conta {
         this.tipo = tipo;
         this.saldo = saldo;
     }
-
+    // Polimorfismo de coerção
     abstract void creditar(double valor);
 
     abstract void debitar(double valor);
+
+    int getID() {
+        return this.id;
+    }
 
     double consultarSaldo() {
         return this.saldo;
     }
 
+    void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
     String toString() {
-        return "Conta " + tipo.toUpperCase() + "\n ID: " + this.id + "\n Saldo: " + this.saldo);
+        return "Conta " + tipo.toUpperCase() + "\n ID: " + this.id + "\n Saldo: " + this.saldo;
     }
 }
